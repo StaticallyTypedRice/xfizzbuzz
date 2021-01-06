@@ -9,7 +9,7 @@ pub struct Cli {
     pub max_number: u32,
 
     #[structopt(
-        help = "The words to replace the number with when it is a multiple of a number, formatted as a space-separated list of '<number>:<word>'. The order of the words specified in the arguments will be the order the words are placed if a number is qualified for more than one word."
+        help = "The words to replace the number with when it is a multiple of a number, formatted as a space-separated list of '<number>:<word>'. The order of the words specified in the arguments will be the order the words are placed if a number is qualified for more than one word. Example: '3:fizz 5:buzz'"
     )]
     pub words: Vec<String>,
 }
