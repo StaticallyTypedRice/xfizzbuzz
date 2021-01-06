@@ -7,7 +7,7 @@ pub struct Word {
 }
 
 impl Word {
-    pub fn from_str(string: &str) -> Word {
+    pub fn from_cli_str(string: &str) -> Word {
         let split_string: Vec<&str> = string.split(":").collect();
         if split_string.len() != 2 {
             eprintln!("Error: Incorrectly formatted word argument '{}'", string);

@@ -18,7 +18,7 @@ pub struct Cli {
 pub fn parse_words_from_command_line(cli: &Cli) -> Vec<xfizzbuzz::Word> {
     let mut output: Vec<xfizzbuzz::Word> = Vec::new();
     for word in &cli.words {
-        output.push(xfizzbuzz::Word::from_str(&word));
+        output.push(xfizzbuzz::Word::from_cli_str(&word));
     }
     output
 }
